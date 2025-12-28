@@ -1,0 +1,107 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(120deg,#0f0c29,#302b63,#24243e);
+  background-size: 300% 300%;
+  animation: bgMove 15s infinite;
+  color: #fff;
+  text-align: center;
+}
+
+@keyframes bgMove {
+  0% {background-position:0% 50%}
+  50% {background-position:100% 50%}
+  100% {background-position:0% 50%}
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  backdrop-filter: blur(12px);
+  background: rgba(0,0,0,0.4);
+}
+
+nav a, nav button {
+  margin-left: 15px;
+  color: #fff;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.hero {
+  padding: 120px 20px;
+}
+
+.gradient-text {
+  font-size: 3.3em;
+  background: linear-gradient(to right,#00f2ff,#7fff00);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.live {
+  margin-top: 15px;
+  opacity: 0.9;
+}
+
+.btn {
+  padding: 14px 32px;
+  border-radius: 30px;
+  text-decoration: none;
+  color: #fff;
+  margin: 10px;
+  display: inline-block;
+}
+
+.glow {
+  background: linear-gradient(135deg,#00f2ff,#7fff00);
+  box-shadow: 0 0 20px rgba(0,255,200,.6);
+}
+
+.outline {
+  border: 2px solid #fff;
+}
+
+section { padding: 80px 20px; }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
+  gap: 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.card {
+  padding: 25px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(10px);
+  transition: transform .3s;
+}
+
+.card:hover { transform: translateY(-8px); }
+
+.settings {
+  margin-top: 30px;
+}
+
+.settings label {
+  display: block;
+  margin: 10px;
+}
+
+.big {
+  max-width: 400px;
+  margin: auto;
+}
+
+footer {
+  padding: 20px;
+  opacity: .7;
+}
